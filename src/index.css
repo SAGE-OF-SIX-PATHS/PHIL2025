@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "KoHo", Arial, Helvetica, sans-serif; /* Adding a fallback font */
+    font-weight: 400;
+    font-style: normal;
+    color: #475569;
+    background: #fafafa;
+    --cursor-color: #333;
+  }
+
+  /* custom-scrollbar.css */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #334155;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #f87537;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+    cursor: pointer;
+  }
+}
